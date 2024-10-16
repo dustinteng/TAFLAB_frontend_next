@@ -50,7 +50,7 @@ def broadcast_locations():
             {"boat_id": f"boat_{i + 1}", "location": generate_location()}
             for i in range(3)  # Only 3 boats
         ]
-        print(f"Sending location data: {boat_data}")
+        # print(f"Sending location data: {boat_data}")
         socketio.emit('boat_locations', boat_data)
         socketio.sleep(2)  # Non-blocking delay
 
