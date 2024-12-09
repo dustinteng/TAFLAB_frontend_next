@@ -1,0 +1,121 @@
+/* components/DataTransfer/DataTransfer.css */
+
+.boat-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.boat-card {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border-radius: 8px;
+  padding: 15px;
+  width: 180px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.boat-card:hover {
+  transform: scale(1.05);
+}
+
+.boat-card-header h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff; /* Ensure light color */
+}
+
+.boat-card-body p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #fff; /* Ensure light color */
+}
+
+.boat-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.boat-modal {
+  background: var(--background-color);
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  color: var(--text-color);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.boat-details {
+  margin-top: 20px;
+}
+
+.boat-details p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.boat-details .lat-lng {
+  display: flex;
+  gap: 15px;
+  margin: 8px 0;
+}
+
+.boat-details .lat-lng p {
+  margin: 0;
+  padding: 10px;
+  font-size: 14px;
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+  text-align: center;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.send-to-cloud-button,
+.get-from-cloud-button {
+  padding: 10px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  background-color: var(--primary-color);
+  transition: background 0.2s ease;
+}
+
+.send-to-cloud-button:hover,
+.get-from-cloud-button:hover {
+  background-color: var(--hover-color);
+}
